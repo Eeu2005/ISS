@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Bruno Ace', cursive;
+    overflow:  hidden;
+     min-width: 100%;
+   min-height: 100%;
+      }
+
+   
+.background{ background-image: url('imagens/plouzane-g739637425_1280.jpg');
+    background-size: cover;
+    justify-content: center;
+  align-items: center;
+  display: flex;
+  position:absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+   min-height: 100%;
+    z-index: -1;
+ 
+
+}    
+
+
+main{
+  margin-top: 80px;
+        background:  linear-gradient(45deg, #038c91c4, #043f83c0 75%);
+     width: 500px;
+    height: 500px;
+border: solid 5px rgb(49, 45, 255);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+main  img{
+  display: flex;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.title{
+
+    display: flex;
+    margin-bottom: 50px;
+}
+.formulario-nome,.formulario-email{
+  opacity: 90%;
+margin-top: 25px;
+border-radius: 15%;
+  width: min-content;
+position: relative;
+}
+.formulario-nome input,.formulario-email input{
+    margin-bottom: 15px;
+    
+    width: 370px;
+    height: 60px;
+  font-family: "Bruno Ace", cursive;
+
+  font-size: 16px;
+border: none;
+outline: 0;
+padding: 16px 0 10px;
+    border: solid 5px white;
+    border-radius: 5%;
+
+}
+.formulario-nome label,.formulario-email label{     
+  transform-origin: top left;
+  padding: 0 8px;
+  transform: translate(0, 17px) scale(1);
+  font-size: 16px;
+  position: absolute;
+  transition:  1s
+
+}
+.formulario-nome-active   label,.formulario-email-active   label{
+
+  transform: translate(0, -19px)  
+
+
+}
+.button2{
+ display: block;
+    cursor: pointer;
+        font-family: 'Bruno Ace', cursive;
+
+    color: white;
+    font-style: unset;
+    border: solid 10px rgb(13, 13, 172);
+    background-color: rgb(13, 13, 172);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 55px;
+
+    margin-top: 1%;
+
+}
+
