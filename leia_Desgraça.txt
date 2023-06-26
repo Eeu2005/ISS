@@ -1,0 +1,8 @@
+tutorial: 
+supondo que ja fez o clone pelo CMD ou GUI  para upar o codigo precisa :
+------------------------CMD--------------------------------------------------------------
+
+fazer um novo branch  
+git branch [nome do branch]
+git commmit[ o comentario descrevendo o que fez ]
+git push  [branch criado]
