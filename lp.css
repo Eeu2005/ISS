@@ -6,6 +6,12 @@
 }
 
 body {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   font-family: "Bruno Ace", cursive;
   overflow-x: hidden;
 }
@@ -22,20 +28,18 @@ body {
 }
 
 .wave {
-  min-height: 100%;
-  min-width: 100%;
+  overflow-y: hidden;
   height: 100%;
-
   background-color: white;
   opacity: 70%;
-  clip-path: circle(57.3% at 2% 0);
+  clip-path: circle(620.3pxs at 2% 0);
   right: 0;
   bottom: 0;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  display: flex;
+
   filter: drop-shadow(1px 1px 10px black);
 }
 
@@ -81,7 +85,7 @@ body {
 
 
 main {
-  height: 400px;
+  height: 315px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -197,7 +201,3 @@ input#email,
   text-align: center;
 }
 
-.tela {
-  visibility: hidden;
-  display: none;
-}

@@ -9,14 +9,13 @@ body {
   align-items: center;
   display: flex;
   font-family: "Bruno Ace", cursive;
-  overflow: hidden;
-  min-width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 .background {
   background-image: url("imagens/plouzane-g739637425_1280.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -61,11 +60,8 @@ main img {
 .formulario-nome input,
 .formulario-email input {
   margin-bottom: 15px;
-
   width: 370px;
-  height: 60px;
   font-family: "Bruno Ace", cursive;
-
   font-size: 16px;
   border: none;
   outline: 0;
@@ -84,9 +80,9 @@ main img {
 }
 .formulario-nome-active label,
 .formulario-email-active label {
-  transform: translate(0, -19px);
+  transform: translate(0, -19px) scale(0.85);
 }
-.button2 {
+.button {
   display: block;
   cursor: pointer;
   font-family: "Bruno Ace", cursive;
@@ -98,4 +94,35 @@ main img {
   text-align: center;
   border-radius: 55px;
   margin-top: 1%;
+}
+
+p{
+  position: sticky;
+font-size: 10px;
+
+
+}
+
+
+
+
+
+/* responsividade */
+
+@media(max-width:390px){
+
+  .formulario-nome input,
+.formulario-email input {
+  width: max-content;
+}
+  body{
+background-image: url("imagens/plouzane-g739637425_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+main{
+
+width: 100%;
+}
+
 }
