@@ -32,7 +32,7 @@ body {
   height: 100%;
   background-color: white;
   opacity: 70%;
-  clip-path: circle(620.3pxs at 2% 0);
+  clip-path: circle(620.3px at 2% 0);
   right: 0;
   bottom: 0;
   position: absolute;
@@ -118,6 +118,7 @@ main {
 }
 
 .button {
+
   margin-left: 5px;
   display: block;
   cursor: pointer;
