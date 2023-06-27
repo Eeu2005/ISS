@@ -6,7 +6,7 @@ fazer um novo branch
 git branch [nome do branch]
 git add [para adicionar o arquivo modificado ou novo]
 git checkout [para mudar para o branch desejado]
-git commit[ o comentario descrevendo o que fez ]
+git commmit -m[ o comentario descrevendo o que fez ]
 git push  [branch criado]
 
 aviso: não da push no main mude antes pfv :)

@@ -146,7 +146,7 @@ main {
   }
 }
 .button:hover {
-  animation: animacao_button 0.25s infinite;
+  animation: animacao_button 0.25s ;
 }
 
 form {
