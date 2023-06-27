@@ -4,9 +4,11 @@ supondo que ja fez o clone pelo CMD ou GUI  para upar o codigo precisa :
 
 fazer um novo branch  
 git branch [nome do branch]
-git add [para adicionar o arquivo modificado ou novo]
 git checkout [para mudar para o branch desejado]
-git commmit -m[ o comentario descrevendo o que fez ]
+git add [para adicionar o arquivo modificado ou novo]
+
+git commit -m [ o comentario descrevendo o que fez ]
+
 git push  [branch criado]
 
 aviso: não da push no main mude antes pfv :)
