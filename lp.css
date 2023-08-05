@@ -6,24 +6,20 @@
 }
 
 body {
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  
   font-family: "Bruno Ace", cursive;
   overflow-x: hidden;
 }
 
 .background {
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("imagens/plouzane-g739637425_1280.jpg");
+  background-image: url(imagens/plouzane-g739637425_1280.jpg);
   background-size: cover;
 }
 
@@ -32,15 +28,13 @@ body {
   height: 100%;
   background-color: white;
   opacity: 70%;
-  clip-path: circle(620.3px at 2% 0);
+  clip-path: circle(500px at 2% 0);
   right: 0;
   bottom: 0;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-
-  filter: drop-shadow(1px 1px 10px black);
 }
 
 .header {
@@ -82,10 +76,9 @@ body {
   justify-content: space-between;
 }
 
-
-
 main {
-  height: 315px;
+  width: 70%;
+  height: 50%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -118,7 +111,6 @@ main {
 }
 
 .button {
-
   margin-left: 5px;
   display: block;
   cursor: pointer;
@@ -144,9 +136,12 @@ main {
   75% {
     transform: rotate(-10deg);
   }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .button:hover {
-  animation: animacao_button 0.25s ;
+  animation: animacao_button 0.25s;
 }
 
 form {
@@ -201,4 +196,17 @@ input#email,
 .primeiro > h1 {
   text-align: center;
 }
+ 
 
+@media(max-width:330px){
+main {
+  margin-top: 5px;
+}
+}
+@media(max-width:530px){
+
+  .background{
+    background-image: url(imagens/plouzane-g739637425_1280\ -\ Copia.jpg);
+  }
+
+}
