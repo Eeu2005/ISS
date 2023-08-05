@@ -4,32 +4,30 @@
   margin: 0;
 }
 
-body {
+body { 
+
   justify-content: center;
   align-items: center;
   display: flex;
   font-family: "Bruno Ace", cursive;
-  height: 100%;
+
 }
 
 .background {
   background-image: url("imagens/plouzane-g739637425_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
-
 main {
-  margin-top: 80px;
-  background: linear-gradient(45deg, #038c91c4, #043f83c0 75%);
+
+  margin-top: 5%;
+ background: linear-gradient(45deg, #038c91c4, #043f83c0 75%);
   width: 500px;
   height: 500px;
   border: solid 5px rgb(49, 45, 255);
@@ -37,6 +35,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 main img {
@@ -48,6 +47,15 @@ main img {
 .title {
   display: flex;
   margin-bottom: 50px;
+}
+a{
+  color: black;
+text-decoration: none;
+}
+
+h3{
+  text-align: center;
+  width: 90%;
 }
 .formulario-nome,
 .formulario-email {
@@ -66,11 +74,12 @@ main img {
   border: none;
   outline: 0;
   padding: 16px 0 10px;
-  border: solid 5px white;
+  border: solid 2px white;
   border-radius: 5%;
 }
 .formulario-nome label,
 .formulario-email label {
+  cursor: text;
   transform-origin: top left;
   padding: 0 8px;
   transform: translate(0, 17px) scale(1);
@@ -81,8 +90,14 @@ main img {
 .formulario-nome-active label,
 .formulario-email-active label {
   transform: translate(0, -19px) scale(0.85);
+ 
 }
+.formulario-nome-active input,.formulario-email-active input{
+   border: 2px solid black;
+}
+
 .button {
+  
   display: block;
   cursor: pointer;
   font-family: "Bruno Ace", cursive;
@@ -97,12 +112,12 @@ main img {
 }
 
 p{
-  position: sticky;
 font-size: 10px;
-
-
 }
 
+input:focus{
+  border:  solid 3px green;
+}
 
 
 
@@ -115,14 +130,29 @@ font-size: 10px;
 .formulario-email input {
   width: max-content;
 }
+
+main{
+width: 100%;
+}
+
+}
+
+@media (max-width:470px)  {  
+
+  .background{
+    background-image: url(imagens/plouzane-g739637425_1280\ -\ Copia.jpg);
+  }
+  
+}
+@media( max-height:510px){
+  .background{
+    display: none;
+  }
+
   body{
-background-image: url("imagens/plouzane-g739637425_1280.jpg");
+     background-image: url("imagens/plouzane-g739637425_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   }
-main{
-
-width: 100%;
-}
 
 }

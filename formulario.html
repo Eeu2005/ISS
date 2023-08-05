@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ISS-formulario</title>
   <link rel="stylesheet" href="formulario.css">
-     <link rel="icon" href="imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png" type="img" />
+  <link rel="icon" href="imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png" type="img" />
 </head>
+
 <body>
-    <div class="background"></div>
-<main>
-<div class="header">
-      <div class="title">
-        <img src="imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png" alt="" />
-        INTELLIGENT <br />
-        SECURITY <br />
-        SOLUTION
-      </div>
-</div>
+  <div class="background"></div>
+  <main>
 
-  <div class="formulario-email">
-    <form>
-      <label for="email"> E-MAIL</label>
-      <input  type="email"  name="email"  id="email"/> 
-      
-    </div>
-      <div class="formulario-nome">
-        <label for="nome"> Nome </label>
-        <input type="text" id="nome">
-    </div>
-    <p> *o uso do e-mail será usado somente para notificações e propagandas</p>
-  <button type="submit" class="button">CADASTRAR</button>
+    <div class="title">
+      <img src="imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png" alt="" />
+      INTELLIGENT <br />
+      SECURITY <br />
+      SOLUTION
 
+    </div>
+    <h3> Ao se cadastrar, você terá acesso a recursos exclusivos.</h3>
+
+    <div class="formulario-email">
+      <form>
+        <label for="email"> E-MAIL</label>
+        <input type="email" name="email" autocomplete="email" required id="email"/>
+
+    </div>
+    <div class="formulario-nome">
+      <label for="nome"> Nome </label>
+      <input type="text" autocomplete="name" onkeypress="return lettersOnly(event)" required id="nome">
+    </div>
+
+
+    <label for="cadastrar" onclick="cheacagem();" class="button"> cadastrar-se</label>
+    <input type="submit"  style="display: none;" id="cadastrar">
+    <a href="index.html"  id="voltar" class="button"> voltar</a>
+    
   </main>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
