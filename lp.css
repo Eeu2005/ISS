@@ -45,7 +45,7 @@ body {
   align-items: center;
 }
 
-.title {
+.title { gap :5px;
   display: flex;
   padding-left: 2%;
 }
@@ -54,6 +54,9 @@ body {
   display: flex;
   width: 60px;
   border-radius: 50%;
+}
+.title >p{
+  font-size: 18px;
 }
 
 .header a {
@@ -110,7 +113,9 @@ main {
   padding-left: 10px;
 }
 
-.button {
+.button {  
+  
+  box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.64);
   margin-left: 5px;
   display: block;
   cursor: pointer;
@@ -123,21 +128,21 @@ main {
   text-align: center;
   border-radius: 55px;
   max-width: 100%;
-  margin-top: 1%;
+  margin-top: 1.5%;
 }
 
 @keyframes animacao_button {
   25% {
-    transform: rotate(10deg);
+    transform:   scale(1.1);
   }
   50% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   75% {
-    transform: rotate(-10deg);
+    transform: scale(1.1);
   }
   100% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 }
 .button:hover {
