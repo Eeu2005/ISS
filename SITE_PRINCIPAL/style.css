@@ -558,9 +558,11 @@ padding-right: 0px;
   }
 
   .grupo-port{
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
     padding-bottom: 30px;
-    text-align: center;
+    align-items: center;
   }
 
   .grupo-port > img{
@@ -907,4 +909,34 @@ input{
 
 }
 
+.imagem_linkedin{
+  text-align: center;
+  width: 50%;
+display: block;
+  height: 10%;
+  font-size: 30px;
+}
 
+.imagem_linkedin:hover{
+  transition: 5ms;
+    animation: esquerda_Direita  2.5s infinite;
+  }
+ 
+@keyframes esquerda_Direita{
+
+  
+  25%{
+    transform:translateX(15px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  
+  75%{
+    transform: translateX(-15px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+  
+  }
