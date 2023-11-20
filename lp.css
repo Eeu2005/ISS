@@ -28,7 +28,7 @@ body {
   height: 100%;
   background-color: white;
   opacity: 70%;
-  clip-path: circle(500px at 2% 0);
+  clip-path: circle(352px at 30px 270px);
   right: 0;
   bottom: 0;
   position: absolute;
@@ -46,6 +46,7 @@ body {
 }
 
 .title {
+  margin-top: 50px;
   display: flex;
   padding-left: 2%;
 }
@@ -126,22 +127,20 @@ main {
   margin-top: 1%;
 }
 
-@keyframes animacao_button {
+ @keyframes animacao_button {
   25% {
-    transform: rotate(10deg);
+    transform: scale(1)
   }
   50% {
-    transform: rotate(0deg);
+    transform: scale(1.25);
   }
-  75% {
-    transform: rotate(-10deg);
+  100%{
+    transform: scale(1);
   }
-  100% {
-    transform: rotate(0deg);
-  }
+
 }
 .button:hover {
-  animation: animacao_button 0.25s;
+  animation: animacao_button 0.45s infinite;
 }
 
 form {
@@ -202,8 +201,15 @@ input#email,
 main {
   margin-top: 5px;
 }
+.title{
+  margin-top:40px;
 }
-@media(max-width:530px){
+.wave{
+  clip-path: circle(352px at 30px 170px);
+}
+}
+@media(max-width:560px){
+
 
   .background{
     background-image: url(imagens/plouzane-g739637425_1280\ -\ Copia.jpg);
