@@ -5,7 +5,43 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Righteous&family=Sarala&display=swap');
 
-* {
+/* Estilizando a barra de rolagem para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+  /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  /* Cor de fundo da área da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #072547;
+  /* Cor do indicador da barra de rolagem */
+  border-radius: 6px;
+  /* Borda arredondada do indicador */
+}
+
+/* Estilizando a barra de rolagem para o Firefox */
+::-moz-scrollbar {
+  width: 12px;
+  /* Largura da barra de rolagem */
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Cor de fundo da área da barra de rolagem */
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #888;
+  /* Cor do indicador da barra de rolagem */
+  border-radius: 6px;
+  /* Borda arredondada do indicador */
+}
+
+/* Adicione mais estilos conforme necessário */* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
