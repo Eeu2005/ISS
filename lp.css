@@ -46,7 +46,6 @@ body {
 }
 
 .title {
-  margin-top: 5%;
   display: flex;
   padding-left: 2%;
 }
@@ -201,14 +200,9 @@ input#email,
 main {
   margin-top: 5px;
 }
-.title{
-  margin-top:30px;
 }
-.wave{
-  clip-path: circle(352px at 30px 170px);
-}
-}
-@media(max-width:530px){
+@media(max-width:560px){
+
 
   .background{
     background-image: url(imagens/plouzane-g739637425_1280\ -\ Copia.jpg);
