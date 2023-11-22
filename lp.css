@@ -46,7 +46,6 @@ body {
 }
 
 .title {
-  margin-top: 50px;
   display: flex;
   padding-left: 2%;
 }
@@ -200,12 +199,6 @@ input#email,
 @media(max-width:330px){
 main {
   margin-top: 5px;
-}
-.title{
-  margin-top:40px;
-}
-.wave{
-  clip-path: circle(352px at 30px 170px);
 }
 }
 @media(max-width:560px){
