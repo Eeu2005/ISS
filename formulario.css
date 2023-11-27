@@ -30,7 +30,7 @@ main {
   background: linear-gradient(45deg, #038c91c4, #043f83c0 75%);
   width: 500px;
   height: 500px;
-  border: solid 5px rgb(49, 45, 255);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +38,13 @@ main {
   z-index: 2;
 }
 
+h3{
+  color: #bcf9f9;
+}
+
 main img {
   display: flex;
-  width: 60px;
+  width: 65px;
   border-radius: 50%;
 }
 
