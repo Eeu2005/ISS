@@ -471,7 +471,16 @@ padding-right: 0px;
     color: #ffffff;
     text-align: center;
   }  
-
+.fa-x-twitter{
+  transform: translateY(-9px);
+  height: 0px;
+  width: 17px;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0px 2px 0px;
+  color: rgb(214, 211, 211);
+  cursor: pointer;
+  transition: 0.5s;}
 
   @media (max-width: 300px) {
     footer {
