@@ -20,18 +20,19 @@ email.addEventListener("blur", () => {
   }
 });
 
+var emailvalor =localStorage.setItem(emailvalor,email.value)
+let resultado = localStorage.getItem(emailvalor)
+
 function cheacagem() {
   console.log(nome.value, "", email.value);
   if (email.value == "" || nome.value == "") {
-    alert ("preencha os campos");
+    alert("preencha os campos");
+    console.log(resultado)
   } else {
     alert("cadastrado");
-      
-  
-}}
-
+ 
+  }
+}
 function lettersOnly(evt) {
   if (!/[" "a-záéíóúàèìòùãõâêîôûäëïöüç]/i.test(evt.key)) return false;
 }
-
-
