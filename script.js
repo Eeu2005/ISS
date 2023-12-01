@@ -36,5 +36,3 @@ function cheacagem() {
 function lettersOnly(evt) {
   if (!/[" "a-záéíóúàèìòùãõâêîôûäëïöüç]/i.test(evt.key)) return false;
 }
-
-
