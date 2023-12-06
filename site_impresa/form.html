@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="Imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png"
+      type="img" />
+    <script
+      src="https://kit.fontawesome.com/6503890d8a.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav>
+        <a class="logo" href="index.html">Intelligent Security Solution</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="serviços.html">Serviços</a></li>
+          <li><a href="form.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="mobile-navbar.js"></script>
+
+    <div class="conteudo-form">
+      <form class="info-form">
+        <fieldset class="ti-loca">
+          <h1>Localização</h1>
+          <h2>27 jorge mecier Rua 176 1200 SP</h2>
+          <h2>IL 60604-3030</h2>
+        </fieldset>
+
+        <fieldset class="ti-siga">
+          <h3>Siga-Nos</h3>
+          <div class="rede-sociais-form">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="termo-privacidade">© 2023 Política de privacidade</div>
+        </fieldset>
+      </form>
+
+      <form class="formulario" aria-keyshortcuts="a+b" id="form-id">
+        <fieldset class="grupo">
+          <div class="campo">
+            <h1>Formulário de contato</h1>
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <input
+              autocomplete="off"
+              onKeyPress="return lettersOnly(event)"
+              type="text"
+              name="nome"
+              id="txtNome"
+              placeholder="Digite seu Nome" />
+          </div>
+        </fieldset>
+        <fieldset class="grupo">
+          <div class="campo">
+            <input
+              autocomplete="off"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu E-mail" />
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <input
+              autocapitalize="off"
+              type="tel"
+              name="telefone"
+              id="txtTelefone"
+              placeholder="Digite seu telefone" />
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <textarea
+              autocomplete="off"
+              class="mensagem"
+              rows="5"
+              name="Mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem"></textarea>
+          </div>
+        </fieldset>
+         <input
+              type="submit"
+              value="enviar"
+              class="botao"
+              onclick="checagem()" />
+      </form>
+    </div>
+    <footer class="rodape">
+      <div class="container">
+        <img
+          class="rodape-imagem"
+          src="Imagens/0_1_0_0_0_1_0_0_1_1_1_0_1_0_1_1_0_0_0_1.png"
+          alt="nome da empreza" />
+        <div class="sobre nós">
+          <h2>Sobre nós</h2>
+          <p>
+            Empresa especializada em proteger sistemas, redes e dados contra
+            ameaças cibernéticas.Nosso principal objetivo é garantir a
+            confidencialidade, integridade e disponibilidade das informações
+            digitais de uma organização.
+          </p>
+        </div>
+
+        <div class="Contato">
+          <h2>Contato</h2>
+          <p>Cyber.SCpro@SCou.com</p>
+          <p>(+55) 99 99999-9999</p>
+        </div>
+
+        <div class="fale-conosco">
+          <a href="form.html">
+            <h2>Fale Conosco</h2>
+          </a>
+          <p>FAQ</p>
+          <p>Suporte</p>
+          <div class="flex-row"></div>
+        </div>
+
+        <div class="rede-sociais">
+          <h2>Rede Sociais</h2>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter" id="twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="texto-copy">copyright © 2023</div>
+    </footer>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <script>
+      $("#txtTelefone").mask("(00) 00000-0000");
+
+      function lettersOnly(evt) {
+        if (!/[""a-záéíóúàèìòùãõâêîôûäëïöüç]/i.test(evt.key)) return false;
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
