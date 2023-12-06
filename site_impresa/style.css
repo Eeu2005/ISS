@@ -1,0 +1,956 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Sarala&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Righteous&family=Sarala&display=swap');
+
+/* Estilizando a barra de rolagem para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+  /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  /* Cor de fundo da área da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #072547;
+  /* Cor do indicador da barra de rolagem */
+  border-radius: 6px;
+  /* Borda arredondada do indicador */
+}
+
+/* Estilizando a barra de rolagem para o Firefox */
+::-moz-scrollbar {
+  width: 12px;
+  /* Largura da barra de rolagem */
+}
+
+::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Cor de fundo da área da barra de rolagem */
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #888;
+  /* Cor do indicador da barra de rolagem */
+  border-radius: 6px;
+  /* Borda arredondada do indicador */
+}
+
+/* Adicione mais estilos conforme necessário */* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Sarala', sans-serif;
+  font-size: medium;
+}
+
+h1{
+  color: rgb(255, 187, 0);
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+h2{
+  font-family: 'Sarala', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(45deg, #038c91, #043f83,#000000 75%);
+  flex-wrap: wrap;
+}
+@media (max-width:800px) {
+body{
+background: linear-gradient(116deg, #038c91, #043f83,#000000 75%);
+}
+} 
+
+
+/* */
+/*#0f293b(padrão),#5f0b0b(vermelho-vinho),rgba(4, 1, 199, 0.884),45deg, #04e0e7, #043f83,#000000 70%(site_azul),*/
+
+
+/*CABECALHO*/
+
+.cabecalho{
+  
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  font-family: system-ui, Helvetica, -apple-system, Arial, sans-serif;
+  background: #000000;
+  padding: 6.5px;
+  border-bottom: solid 2px #ffffff;
+}
+
+
+nav{
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  font-family: system-ui, Helvetica, -apple-system, Arial, sans-serif;
+  background: #000000;
+  padding: 8.5px;
+}
+
+.nav-list a{
+  list-style: none;
+  display: flex;
+  letter-spacing: 3px;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-right: 100px;
+  }
+ @media(max-width:900px) {
+ 
+.logo{
+padding-right: 0px;
+}
+  }
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+.nav-list > li {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+
+  @media(max-width:400px) {
+    .conteudo-principal-imagem {
+      height: 430px;
+      width: 109%;
+      border-radius: 150%;
+    }
+  }
+  
+@media (max-width: 800px) {
+    body {
+      overflow-x: hidden;
+    }
+.nav-list {
+      display:none ;
+      position: absolute;
+      top:12%;
+      right: 0;
+      width: 50vw;
+      height: 67vh;
+      background: #000000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: navlinkfade 0.3s ease-in;
+    }
+.nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+.mobile-menu {
+      display: block;  
+    }
+  }
+  
+.nav-list.active {
+  display: flex;
+    transform: translateX(0);
+  }
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @media( max-width:576px){
+    .nav-list{
+      top:16.5%
+    }
+  }
+  @media(max-width:384px){
+.nav-list{
+  top: 22%;
+}
+  }
+  
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+.mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  @media(MAX-WIDTH:600px){
+    nav{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+
+  }
+
+
+/*INICIO*/
+
+  .conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid;
+    padding-top: 24px;
+  }
+
+  .conteudo-principal {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  @media (max-width: 1000px) {
+    .conteudo-principal {
+      display: flex;
+      flex-direction: column;
+    }}
+
+  .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .conteudo-principal-titulo {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 400;
+    font-size: 54px;
+  }
+
+  .conteudo-principal-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .conteudo-principal-botao {
+    background-color: #888888;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .conteudo-principal-botao-sobre{
+    color: #000000;
+  }
+  
+  .conteudo-principal-imagem {
+    height: 400px;
+    width: 400px;
+    border-radius: 150%;
+    cursor: pointer;
+  }
+  @media(max-width:600px){
+    .conteudo-principal-imagem{
+      padding-top: 5%;
+      width: 80%;
+      height: 10%;
+    }
+  }
+
+  .conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .conteudo-secundario-titulo{
+    font-family: 'Righteous', cursive;
+    border-top: 0.4px solid #fff;
+    padding-top: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+
+
+/*RODAPE*/
+  .rodape{
+    height: fit-content;
+    background:linear-gradient(-160deg, rgb(0, 0, 0), #000000);
+    padding: 2px;
+    border-top: 0.4px solid #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  
+  
+
+  .container div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;  
+  }
+
+  .fale-conosco a{
+    text-decoration: none;
+  }
+
+  .contato{
+    margin-left: 45px;
+  }
+
+
+  .rodape-imagem{
+   border-radius: 100%;
+    height: 100px;
+    width: 105px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .rodape h2{
+    color: #fff;
+  }
+
+  .rodape p{
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .rodape .sobre-nos{
+    margin-left: 30px;
+  }
+
+
+  .rede-sociais{
+    color: #fff;
+    align-items: center;
+  }
+
+  .rede-sociais .fa-facebook-f{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(5, 2, 172);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais .fa-facebook-f:hover{
+    color: #140085;
+    transform: translateY(-9px);
+  }
+
+  .rede-sociais .fa-twitter{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(0, 247, 255);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais .fa-twitter:hover{
+    color: rgb(0, 233, 250);
+    transform: translateY(-9px);
+  }
+
+
+  .rede-sociais .fa-instagram{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(214, 0, 203);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais .fa-instagram:hover{
+    color: rgb(255, 0, 255);
+    transform: translateY(-9px);
+  }
+
+
+  .rede-sociais .fa-whatsapp{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(0, 255, 13);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais .fa-whatsapp:hover{
+    color: #1eff00;
+    transform: translateY(-9px);
+  }
+  
+  .texto-copy{
+      font-family: 'Sarala';
+    color: #ffffff;
+    text-align: center;
+  }  
+.fa-x-twitter{
+  transform: translateY(-9px);
+  height: 0px;
+  width: 17px;
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0px 2px 0px;
+  color: rgb(214, 211, 211);
+  cursor: pointer;
+  transition: 0.5s;}
+
+  @media (max-width: 300px) {
+    footer {
+      flex-direction: row;
+      max-width: auto;
+    }}
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media(max-width:900px) {
+  .container {
+    flex-direction: column;
+    display: flex;
+  }
+  .container div{
+    padding-left: 1%;
+
+
+
+  }
+}
+/*SOBRE*/
+
+  .tudo-sobre{
+    display: flex;
+      flex-direction: row;
+    margin: 2%;
+  }
+
+
+  .imagem-sobre{
+    position: sticky;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  @media(max-width:800px) {
+    .tudo-sobre{
+      flex-direction: column; 
+    align-items: center;
+    } 
+    }
+
+  .conteudo-sobre{
+    margin-left: 2%;
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  .conteudo-sobre h1{
+    font-size: x-large;
+    color: rgb(255, 187, 0);
+    font-family: 'Bruno Ace SC', cursive;
+   text-align: justify;
+  }
+
+  .conteudo-sobre h2{
+    font-size: x-large;
+    padding-top: 2%;
+    color: rgb(187, 184, 176);
+    font-family: 'Sarala', sans-serif;
+    padding-bottom: 2%;
+  }
+
+  .conteudo-sobre p{
+    font-size: x-large;
+    color: #e4dbdb;
+    font-family: 'Sarala', sans-serif;
+    padding-bottom: 2%;
+  }
+
+
+
+/*PORTIFOLIO*/
+
+  .titulo-port{
+  display: flex; 
+    padding-bottom: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .titulo-port h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 1%;
+  }
+
+
+  .titulo-port p{
+    color: #ffffff;
+    font-size: 21px;
+    text-align: justify;
+  
+  }
+  @media(max-width:500px){
+
+    .titulo-port p{
+      text-align: center;
+      font-size: 30px;
+
+    }
+
+  }
+
+  .conteudo-port{
+    display: flex;
+    justify-content: center;
+    margin:3%;
+  }
+
+  .grupo-port{
+    color: #ffffff;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .grupo-port > img{
+    border-radius: 100%;
+    height: 248px;
+    width: 244px;
+  }
+
+
+  .titulo-port h2{
+    font-size: 30px;
+  }
+  
+  @media(max-width:364px){
+    .titulo-port p{
+      font-size: 26px;
+    }
+  }
+  .titulo-port h1{
+    font-size: 43px;
+  }
+
+
+/*SERVIÇOS*/
+
+  .tudo-servicos{
+    margin: 3%;
+    display: flex;
+  }
+
+.introducao-servicos>p{
+    font-size: x-large;
+}
+
+  .introducao-servicos{
+    color: #ffffff;
+    text-align: justify;
+    font-family: 'Sarala', sans-serif;
+    flex: 1;
+  }
+
+  .introducao-servicos h1{
+    font-size: x-large;
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(255, 187, 0);
+    text-align: center;
+  }
+
+  .introducao-servicos h2{
+      font-size: x-large;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-family: 'Bruno Ace SC', cursive;
+    color: rgb(255, 187, 0);
+  }
+
+  .introducao-servicos h3{
+      font-size: x-large;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
+  
+@media(max-width:900px){
+
+  .tudo-servicos{
+    display: flex;
+    flex-direction: column;
+  }
+.div-imagem-servicos{
+  display: flex;
+  justify-content: center;
+
+}
+
+ 
+.imagem-servicos{
+
+width: 100%;
+height: 50%;
+}
+}
+@media(max-width:416px){
+  .introducao-servicos h2{
+    text-align: center;
+  }
+
+}
+
+
+/*FORMULARIO*/
+
+  .conteudo-form{
+  padding-left: 2%;
+    display: flex;
+  }
+
+  .info-form{
+    flex: 1;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 2%;
+    margin-top: 2%;
+    justify-content: left;
+    font-size: 20px;
+  }
+
+  .ti-loca h2{
+    color: #ffffff;
+  }
+
+  .ti-siga h3{
+    color:rgb(255 187 0);
+    padding-top: 20px;
+    font-size: 40px;
+  }
+
+  .rede-sociais-form{
+    color: whitesmoke;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .rede-sociais-form .fa-facebook{
+    height: 0px;
+    width: 16px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(5, 2, 172);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais-form .fa-facebook:hover{
+    color: #140085;
+    transform: translateY(-9px);
+  }
+
+  .rede-sociais-form .fa-twitter{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(0, 247, 255);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais-form .fa-twitter:hover{
+    color: rgb(0, 233, 250);
+    transform: translateY(-9px);
+  }
+
+  .rede-sociais-form .fa-instagram{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(214, 0, 203);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais-form .fa-instagram:hover{
+    color: rgb(255, 0, 255);
+    transform: translateY(-9px);
+  }
+  .rede-sociais-form .fa-whatsapp{
+    height: 0px;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0px;
+    color: rgb(0, 255, 13);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .rede-sociais-form .fa-whatsapp:hover{
+    color: #1eff00;
+    transform: translateY(-9px);
+  }
+
+  .termo-privacidade{
+    padding-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+  }
+  
+  .texto-copy{
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .formulario{
+    flex: 1;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-top: 2%;
+    justify-content: left;
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+ 
+  .solicitacao-contato{
+    text-align: center;
+  }
+
+  fieldset.grupo > .campo {
+    float:  left;
+    margin-right: 1.5em;
+}
+
+  fieldset{
+    border: 0;
+  }
+
+  input, select, textarea, button {
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    color: #000000;
+    border-radius: 5px;
+    width: 23.5em;
+}
+@media(max-width:900px){
+ 
+
+  .conteudo-form {
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column-reverse
+
+}
+
+  .termo-privacidade{
+    padding-bottom: 5%;
+  }
+ 
+}
+@media(max-width:550px){
+    .conteudo-form{
+      padding-left: 3%;
+
+
+    }
+    
+    .info-form{
+  
+      margin-left: 0px;
+
+
+    }
+
+
+
+    .formulario{
+
+      margin-left: 0px;
+    
+     }
+
+    input{
+      width: 120%;
+    }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+  }
+    .mensagem {
+  
+      width: 110%;
+  
+    }
+  }
+
+  .grupo{
+    width: fit-content;
+  text-align: left;
+  justify-content: center;
+}
+
+  .grupo:after {
+  clear: both;
+}
+
+  .campo {
+  margin-bottom: 1em;
+}
+
+  .campo h1{
+  color: #ffffff;
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 40px;
+  }
+ 
+
+  .campo label {
+  margin-bottom: 0.2em;
+  color: #ffffff;
+  display: block;
+}
+
+  .campo input[type="text"], .campo input[type="email"],.campo input[type="tel"], .campo select, .campo textarea {
+  padding: 0.2em;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: block;
+}
+
+  .mensagem{
+
+  resize: none;
+}
+
+ .botao{
+  text-align: center;
+  width: 150px;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+ }
+@media(max-width:320px){
+  .info-form {
+    font-size: 16px;
+
+  }
+  .campo h1 {
+    font-size: 30px;
+  }
+input{
+  width: 111%;
+}
+
+}
+
+
+/*        PARA AS GRANDES TELAS  : checar na etec     
+
+@media (min-width:2600px) {
+p,h1,h2,h3,a{
+  font-size:50px !important;
+}
+  
+} */

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Bruno Ace", cursive;
+  overflow-x: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(imagens/plouzane-g739637425_1280.jpg);
+  background-size: cover;
+}
+
+.wave {
+  overflow-y: hidden;
+  height: 100%;
+  background-color: white;
+  opacity: 70%;
+  clip-path: circle(352px at 30px 270px);
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+.title {
+  display: flex;
+  padding-left: 15px;
+}
+
+.title > img {
+  display: flex;
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+
+.navlink,
+.navlink > a {
+  color: #ccc;
+}
+
+
+
+main {
+       margin-left: -5px;
+      margin-top: 25px;
+      width: 75%;
+      height: 84%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+}
+
+.frase {
+  margin-top: 2%;
+}
+
+.frase > h1 {
+  color: gray;
+  margin-bottom: 0;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.frase > h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: black;
+  font-size: 18.8px;
+  padding-left: 10px;
+}
+
+.frase > h3 {
+  margin-top: 0;
+  color: rgb(13, 13, 172);
+  font-size: 21.8px;
+  padding-left: 10px;
+}
+
+.button {
+  transition: 255ms;
+  margin-left: 5px;
+  display: block;
+  cursor: pointer;
+  font-family: "Bruno Ace", cursive;
+  color: white;
+  font-style: unset;
+  border: solid 10px rgb(13, 13, 172);
+  background-color: rgb(13, 13, 172);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 55px;
+  max-width: 100%;
+  margin-top: 1%;
+}
+
+ 
+.button:hover {
+scale: 1.15;
+transition: 255ms;
+}
+
+input#email,
+#nome {
+  border: white;
+  width: 370px;
+  height: 60px;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.cadastro > h4 {
+  margin-top: 2%;
+  font-size: 20px;
+  display: flex;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  color: white;
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 300px;
+}
+
+.primeiro > p {
+  font-size: medium;
+  text-align: justify;
+  margin: 2%;
+  margin-right: 80px;
+}
+
+.primeiro > h1 {
+  text-align: center;
+}
+ 
+
+@media(max-width:330px){
+main {
+  margin-top: 5px;
+}
+}
+@media(max-width:560px){
+
+
+  .background{
+    background-image: url(imagens/plouzane-g739637425_1280\ -\ Copia.jpg);
+  }
+
+}
