@@ -1,4 +1,4 @@
-Site feito para a empresa ISS por causa do TCC (trabalho de conclusão de curso) do curso técnico de informática
+Site sobre a empresa ficticia  ISS para o TCC de técnico de informática da ETEC
 feito por:
 * [Bruno Silva Camillo](https://github.com/bStarFall) 
 * [Cristhian Antônio Lopes Satiro](https://www.linkedin.com/in/cristhian-satiro-403625272/)
